@@ -45,11 +45,22 @@
     line-height: 1.5em;
 }
 
-input {
+#radio {
+    display: flex;
+    padding: 5px;
+}
+
+#peso,
+#altura {
     width: 150px;
     border-radius: 20px;
     border: none;
     padding: 10px;
+}
+
+#homem,
+#mulher {
+   margin: 0px 10px;
 }
 
 label {
