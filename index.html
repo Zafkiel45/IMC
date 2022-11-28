@@ -9,23 +9,28 @@
     <script src="JavaScript/Script.js" defer></script>
 </head>
 <body>
+    <header class="cabecalho">
+        <h1 class="titulo">IMC</h1>
+    </header>
     <div id="container">
-        <div id="container-input">
+        <div id="input-container">
             <label for="altura">Altura</label>
             <input type="number" name="altura" id="altura">
             <label for="peso">Peso</label>
             <input type="number" name="peso" id="peso">
-            <div id="radio">
-                <label for="homem"><small>Masculino</small></label>
-                <input type="radio" name="sex" id="homem">
-                <label for="mulher"><small>Feminina</small></label>
-                <input type="radio" name="sex" id="mulher">
-            </div>
-
-            <input type="button" value="Confirmar" id="botão" onclick="clicou()">
         </div>
-        <hr>
-        <div id="res"></div>
+        <div id="container-radio">
+            <label for="masculino">Homem</label>
+            <input type="radio" name="sex" id="masculino">
+            <label for="feminino">Mulher</label>
+            <input type="radio" name="sex" id="feminino">
+        </div>
+        <div id="container-button">
+            <input type="button" value="Confirmar" onclick="clicou()" id="botão">
+        </div>
+        <div id="res">
+            resultado
+        </div>
     </div>
 </body>
 </html>

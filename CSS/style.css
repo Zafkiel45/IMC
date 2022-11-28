@@ -5,77 +5,80 @@
     font-family: arial, helvetica, sans-serif;
 }
 
+body {
+    background-image: linear-gradient(to right, hsl(100, 69%, 24%), hsl(100, 71%, 40%), hsl(100, 71%, 50%), hsl(100, 71%, 60%), hsl(100, 71%, 70%));
+}
+
+input {
+    accent-color: hsl(145, 71%, 50%);
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
 #container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-    color: white;
-    margin-top: 50px;
-    border-radius: 20px;
-    background-color: rgb(36, 143, 225);
-    box-shadow: 2px 2px 3px rgb(2, 117, 179);
-}
-
-#container-input {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-#botão {
-    border-radius: 20px;
-    appearance: none;
-    padding: 10px;
-    color: white;
-    background-color:rgb(140, 11, 239);
-    border: none;
-    margin: 10px 0px;
-}
-
-#res {
-    margin: 10px;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(3, 3, 3);
-    padding: 10px;
-    border-radius: 20px;
+    width: fit-content;
+    padding: 1.25em;
     background-color: white;
-    line-height: 1.5em;
+    margin: auto;
+    border-radius: 20px;
+    min-width: 400px;
+    max-width: 800px;
+    align-items: center;
 }
 
-#radio {
+#input-container{
     display: flex;
-    padding: 5px;
+    flex-direction:column;
+    gap: 5px;
+    justify-content: center;
 }
 
 #peso,
 #altura {
     width: 150px;
-    border-radius: 20px;
+    border-radius: 1.25em;
     border: none;
-    padding: 10px;
+    background-color: lightgray;
+    padding: 5px;
 }
 
-#homem,
-#mulher {
-   margin: 0px 10px;
+#container-radio {
+    margin: 10px 0px;
 }
 
-label {
-    position: relative; 
-    left: 8px;
+#botão {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+#botão:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+#botão:active {
+	position:relative;
+	top:1px;
 }
 
-hr {
-    border-color: rgb(76, 194, 240);
-    width: 100%;
+#res {
+    margin: 20px 0px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 1.5em;
 }
-
-body {
-    background: linear-gradient(135deg, rgba(196,190,239,1) 0%, rgba(117,62,199,1) 65%, rgba(107,46,194,1) 73%, rgba(190,180,238,1) 100%);
-    height: 100vh;
-    background-repeat: no-repeat;
-}
-
